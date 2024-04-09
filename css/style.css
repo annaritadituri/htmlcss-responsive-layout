@@ -62,3 +62,51 @@ Sezione advertisement
 .layout-6 img {
     width: 100%;
 }
+
+
+/*
+Sezione use
+*/
+
+/*LAYOUT*/
+
+.layout-2 .container{
+    background-color: plum;
+    color: white;
+}
+
+.layout-2 .row {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.layout-2 .col {
+    width: 100%;
+    margin: 2rem;
+}
+
+.layout-2 img {
+    width: 100%;
+    margin: auto;
+}
+
+.layout-2 .row .col:last-of-type {
+    background-color: white;
+    color: black;
+    width: 80%;
+    padding: 1rem;
+}
+
+.layout-2 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout-2 .icon {
+    background-color: plum;
+}
