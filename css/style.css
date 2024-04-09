@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Sezione header
+*/
+
+/*LAYOUT*/
+
+header .container {
+    background-color: blue;
+    color: white;
+}
+
+header .row {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header .content-desktop {
+    display: none;
+}
