@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
 }
 
 /*
@@ -9,11 +10,6 @@ Sezione header
 */
 
 /*LAYOUT*/
-
-header .container {
-    background-color: blue;
-    color: white;
-}
 
 header .row {
     max-width: 100%;
@@ -26,6 +22,7 @@ header .row {
 header ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 header li {
@@ -36,6 +33,31 @@ header .content-desktop {
     display: none;
 }
 
+header .col-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*STYLE*/
+
+header .container {
+    background-color: rgb(0, 122, 246);
+    color: white;
+}
+
+header li {
+    padding-left: 1rem;
+}
+
+header .row {
+    padding: 1rem;
+}
+
+header .col-right .content {
+    font-size: 1.5rem;
+}
+
 
 /*
 Sezione advertisement
@@ -43,30 +65,99 @@ Sezione advertisement
 
 /*LAYOUT*/
 
-.layout-6:first-of-type .container {
-    background-color: white;
-}
-
 .layout-6:first-of-type .row {
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.layout-6:first-of-type .col {
-    background-color: lightblue;
-    margin: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.layout-6:first-of-type h3 {
-    color: blue;
-}
-
 .layout-6:first-of-type img {
     width: 100%;
 }
+
+/*STYLE*/
+
+.layout-6:first-of-type .container {
+    background-color: white;
+}
+
+.layout-6:first-of-type h3 {
+    color: rgb(0, 122, 246);
+}
+
+.layout-6:first-of-type .col {
+    background-color: rgb(168, 217, 253);
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.layout-6:first-of-type .col {
+    border-radius: 20px;
+}
+
+.layout-6:first-of-type .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.layout-6:first-of-type .content {
+    text-align: center;
+}
+
+.layout-6:first-of-type h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.layout-6:first-of-type p {
+    text-align: center;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.layout-6:first-of-type .col:first-of-type p {
+    margin-left: 1rem;
+    text-align: start;
+}
+
+.layout-6:first-of-type button {
+    background-color: rgb(0, 122, 246);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem;
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.layout-6:first-of-type .col:first-of-type .icon {
+    padding-right: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.layout-6:first-of-type .col:first-of-type .content:last-of-type {
+   padding-bottom: 0;
+   position: relative;
+}
+
+.layout-6:first-of-type .col:first-of-type .content:last-of-type img {
+    position: relative;
+    bottom: -4px;
+}
+
+.layout-6:first-of-type .icon {
+    color: rgb(0, 122, 246);
+    font-size: 4rem;
+}
+
 
 
 /*
@@ -74,11 +165,6 @@ Sezione use
 */
 
 /*LAYOUT*/
-
-.layout-2 .container{
-    background-color: plum;
-    color: white;
-}
 
 .layout-2 .row {
     max-width: 100%;
@@ -98,20 +184,64 @@ Sezione use
     margin: auto;
 }
 
-.layout-2 .row .col:last-of-type {
-    background-color: white;
-    color: black;
-    padding: 1rem;
-}
-
 .layout-2 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/*STYLE*/
+
+.layout-2 .container{
+    background-color: rgb(149, 147, 230);
+    color: white;
+}
+
+.layout-2 .row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.layout-2 .col:first-of-type h2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.layout-2 p {
+    line-height: 1.6;
+}
+
+.layout-2 .row .col:last-of-type {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.layout-2 .row .col:last-of-type .content {
+    padding: 1rem;
+}
+
 .layout-2 .icon {
-    background-color: plum;
+    background-color: rgb(149, 147, 230);
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border-radius: 100%;
+}
+
+.layout-2 .row .col:last-of-type h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.layout-2 .row .col:last-of-type p {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -138,9 +268,49 @@ Sezione testimonials
     width: 100%;
 }
 
+/*STYLE*/
+
 .multiple-rows .col:not(.col:first-of-type) {
-    background-color: plum;
+    background-color: rgb(149, 147, 230);
     padding: 2rem;
+}
+
+.multiple-rows .col-title p:first-child {
+    margin-top: 1.5rem;
+}
+
+.multiple-rows .col-title p:not(p:first-child) {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.multiple-rows h2 {
+    color: rgb(149, 147, 230);
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.3;
+}
+
+.multiple-rows .col {
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.multiple-rows .col .content p:last-child {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.multiple-rows img {
+    border-radius: 2000px;
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 
@@ -150,11 +320,6 @@ Sezione benefits
 
 /*LAYOUT*/
 
-.layout-6 .container{
-    background-color: plum;
-    color: white;
-}
-
 .layout-6 .row {
     max-width: 80%;
     margin: auto;
@@ -163,24 +328,63 @@ Sezione benefits
     flex-wrap: wrap;
 }
 
+/*STYLE*/
+
+.layout-6 .container{
+    background-color: rgb(149, 147, 230);
+    color: white;
+    padding-bottom: 3rem;
+}
+
 .layout-6 .col {
     background-color: white;
     color: black;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 30px;
+}
+
+.layout-6 .col .content {
+    padding: 2rem;
 }
 
 .layout-6 .col h1, .layout-6 h3 {
-    color: plum;
+    color: rgb(149, 147, 230);
+}
+
+.layout-6 .col h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.layout-6 h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
 }
 
 .layout-6 .container > h1 {
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
+
 }
 
-.layout-6 .content {
-    padding: 1rem;
+.layout-6 p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.layout-6 button {
+    background-color: rgb(149, 147, 230);
+    color: white;
+    border: none;
+    letter-spacing: 0.3rem;
+    padding: 0.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 30px;
+    margin-top: 1rem;
 }
 
 
@@ -199,19 +403,74 @@ Sezione about us
     flex-wrap: wrap;
 }
 
+.col70-30 img {
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    width: 60%;
+}
+
+.image i {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/*STYLE*/
+
 .col70, .col30 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.col70-30 img {
-    width: 100%;
+.col70-30 h1 {
+    color: rgb(149, 147, 230);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .col70-30 h1 {
-    color: plum;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.col70-30 p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.col70-30 p:last-of-type {
+    margin-top: 3rem;
+}
+
+.col70-30 img {
+    border-radius: 100%;
+}
+
+.image i {
+    font-size: 4rem;
+    color: rgb(149, 147, 230);
+}
+
+.col70-30 h3 {
+    color: rgb(149, 147, 230);
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.col70-30 button {
+    background-color: rgb(149, 147, 230);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -221,19 +480,69 @@ Sezione Get started
 
 /*LAYOUT*/
 
-.col100 .container {
-    background-color: plum;
-}
-
 .col100 .content {
     max-width: 80%;
     margin: auto;
     text-align: center;
 }
 
+/*STYLE*/
+
+.col100 .container {
+    background-color: rgb(149, 147, 230);
+    color: white;
+}
+
 .col100 * {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.col100 p:first-of-type {
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.col100 h2 {
+    font-size: 2rem;
+}
+
+.col100 h1 {
+    font-size: 3.5rem;
+    color: rgb(255, 184, 95);
+}
+
+.col100 p {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.col100 button {
+    background-color: white;
+    color: rgb(149, 147, 230);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.2rem 4rem 1.2rem 4rem;
+    letter-spacing: 0.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.col100 i {
+    font-size: 0.3rem;
+    vertical-align: middle;
+}
+
+.col100 a:visited {
+    color: white;
+}
+
+.col100 p:last-of-type {
+    font-size: 0.9rem;
+    line-height: 0.2;
 }
 
 
@@ -245,13 +554,33 @@ Sezione footer
 
 footer .container {
     text-align: center;
-    color: white;
-    background-color: black;
 }
 
 footer .content {
     max-width: 80%;
     margin: auto;
+}
+
+/*STYLE*/
+
+footer .container {
+    color: white;
+    background-color: rgb(65, 65, 65);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+footer p:first-of-type {
+    margin-bottom: 3rem;
+}
+
+footer a:visited {
+    color: rgb(149, 147, 230);
 }
 
 
@@ -396,6 +725,16 @@ RESPONSIVE LAYOUT DESKTOP
 
     .layout-6 .col {
         width: calc((100% - 2rem) / 3);
+    }
+
+    /*STYLE*/
+
+    header button {
+        background-color: white;
+        color: black;
+        border: 0;
+        border-radius: 30px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
     }
 
 }
