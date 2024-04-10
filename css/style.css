@@ -592,6 +592,8 @@ RESPONSIVE LAYOUT TABLET
 
     /*Sezione advertisement*/
 
+    /*LAYOUT*/
+
     .layout-6:first-of-type .row{
         max-width: 80%;
         margin: auto;
@@ -600,8 +602,12 @@ RESPONSIVE LAYOUT TABLET
     
     .layout-6:first-of-type .col:first-of-type {
         width: calc(((100% - 1rem) / 3) * 2);
+    }
+
+    .layout-6:first-of-type .col:first-of-type .content {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .layout-6:first-of-type .col:first-of-type img {
@@ -613,8 +619,25 @@ RESPONSIVE LAYOUT TABLET
         width: calc((100% - 2rem) / 3);
     }
 
+    /*STYLE*/
+
+    .layout-6:first-of-type .col:first-of-type .content * {
+        margin-left: 1rem;
+    }
+
+
+    /*Sezione use*/
+
+    /*STYLE*/
+
+    .layout-2 .col:first-of-type h2 {
+        font-size: 4rem;
+    }
+
+
     /*Sezione testimonials*/
 
+    /*LAYOUT*/
 
     .multiple-rows .content:not(.col-title .content) {
         display: flex;
@@ -635,15 +658,26 @@ RESPONSIVE LAYOUT TABLET
 
     /*Sezione benefits*/
 
+    /*LAYOUT*/
+
     .layout-6 .row {
         gap: 1rem;
     }
+
+    /*STYLE*/
+
+    .layout-6 .col .content {
+        padding: 0.8rem;
+    }
+
 
     .layout-6 .col {
         width: calc((100% - 1rem) / 2);
     }
 
     /*Sezione about us*/
+
+    /*LAYOUT*/
 
     .col70-30 .col70 {
         width: 70%;
@@ -652,6 +686,60 @@ RESPONSIVE LAYOUT TABLET
     .col70-30 .col30 {
         width: 30%;
     }
+
+    .col70-30 .row {
+        justify-content: first baseline;
+    }
+
+    /*STYLE*/
+
+    .col70-30 .container {
+        padding-top: 2rem;
+        padding-bottom: 7rem;
+    }
+
+    .col70-30 h1 {
+        font-size: 5rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .col70-30 .col70 {
+        padding-right: 5rem;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .col30 h3 {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .col30 button {
+        font-size: 0.8rem;
+    }
+
+
+    /*Sezione Get started*/
+
+    /*STYLE*/
+
+    .col100 h2 {
+        font-size: 3rem
+    }
+
+    .col100 h1 {
+        font-size: 6rem;
+    }
+
+    .col100 p:nth-child(4) {
+        font-size: 1.1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
 
 }
 
