@@ -190,6 +190,10 @@ Sezione use
     align-items: center;
 }
 
+.layout-2 .col:first-of-type .content:first-child {
+    align-items: start;
+}
+
 /*STYLE*/
 
 .layout-2 .container{
@@ -752,6 +756,8 @@ RESPONSIVE LAYOUT DESKTOP
     
     /*Sezione header*/
 
+    /*LAYOUT*/
+
     header .col-right .content {
         display: none;
     }
@@ -765,18 +771,48 @@ RESPONSIVE LAYOUT DESKTOP
         margin: auto;
     }
 
+    /*STYLE*/
+
+    header button {
+        background-color: white;
+        color: black;
+        border: 0;
+        border-radius: 30px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+
     /*Sezione advertisement*/
+
+    /*LAYOUT*/
 
     .layout-6:first-of-type .col:first-of-type {
         display: flex;
         flex-direction: row;
     }
 
-    .layout-6:first-of-type .col:first-of-type img {
+    .layout-6:first-of-type .col:first-of-type .content:last-of-type img {
+        bottom: 0;
         width: 100%;
+        margin-left: 0;
     }
 
+    .layout-6:first-of-type .col:first-of-type .content:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    /*STYLE*/
+
+    .layout-6:first-of-type .col:first-of-type .content:last-of-type {
+        padding-right: 5rem;
+    }
+
+
     /*Sezione use*/
+
+    /*LAYOUT*/
 
     .layout-2 .row {
         max-width: 80%;
@@ -809,20 +845,33 @@ RESPONSIVE LAYOUT DESKTOP
         padding: 2rem;
     }
 
+    /*STYLE*/
+
+    .layout-2 .col:first-of-type h2 {
+        font-size: 2rem;
+    }
+
+    .layout-2 p:first-of-type {
+        padding-right: 5rem;
+    }
+
+
+    /*Sezione testimonials*/
+
+    /*LAYOUT*/
+
+    .multiple-rows .row {
+        max-width: 80%;
+        margin: auto;
+    }
+
+
     /*Sezione benefits*/
+
+    /*LAYOUT*/
 
     .layout-6 .col {
         width: calc((100% - 2rem) / 3);
-    }
-
-    /*STYLE*/
-
-    header button {
-        background-color: white;
-        color: black;
-        border: 0;
-        border-radius: 30px;
-        padding: 0.5rem 1rem 0.5rem 1rem;
     }
 
 }
