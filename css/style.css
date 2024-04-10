@@ -244,3 +244,21 @@ Sezione Get started
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+
+/*
+Sezione footer
+*/
+
+/*LAYOUT*/
+
+footer .container {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+footer .content {
+    max-width: 80%;
+    margin: auto;
+}
