@@ -222,3 +222,25 @@ Sezione about us
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+
+/*
+Sezione Get started
+*/
+
+/*LAYOUT*/
+
+.col100 .container {
+    background-color: plum;
+}
+
+.col100 .content {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.col100 * {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
