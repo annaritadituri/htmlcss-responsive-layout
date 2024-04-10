@@ -43,7 +43,11 @@ Sezione advertisement
 
 /*LAYOUT*/
 
-.layout-6 .row {
+.layout-6:first-of-type .container {
+    background-color: white;
+}
+
+.layout-6:first-of-type .row {
     max-width: 100%;
     margin: auto;
     display: flex;
@@ -51,7 +55,7 @@ Sezione advertisement
     flex-wrap: wrap;
 }
 
-.layout-6 .col {
+.layout-6:first-of-type .col {
     max-width: 80%;
     margin: auto;
     background-color: lightblue;
@@ -59,7 +63,11 @@ Sezione advertisement
     margin-bottom: 0.5rem;
 }
 
-.layout-6 img {
+.layout-6:first-of-type h3 {
+    color: blue;
+}
+
+.layout-6:first-of-type img {
     width: 100%;
 }
 
@@ -138,4 +146,46 @@ Sezione testimonials
 .multiple-rows .col:not(.col:first-of-type) {
     background-color: plum;
     padding: 2rem;
+}
+
+
+/*
+Sezione benefits
+*/
+
+/*LAYOUT*/
+
+.layout-6 .container{
+    background-color: plum;
+    color: white;
+}
+
+.layout-6 .row {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layout-6 .col {
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.layout-6 .col h1, .layout-6 h3 {
+    color: plum;
+}
+
+.layout-6 .container > h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.layout-6 .content {
+    padding: 1rem;
 }
