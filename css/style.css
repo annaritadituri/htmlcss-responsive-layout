@@ -85,7 +85,6 @@ Sezione use
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -102,7 +101,6 @@ Sezione use
 .layout-2 .row .col:last-of-type {
     background-color: white;
     color: black;
-    width: 80%;
     padding: 1rem;
 }
 
@@ -261,7 +259,7 @@ footer .content {
 RESPONSIVE LAYOUT TABLET
 */
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 768px) {
 
     /*Sezione advertisement*/
 
@@ -324,6 +322,80 @@ RESPONSIVE LAYOUT TABLET
 
     .col70-30 .col30 {
         width: 30%;
+    }
+
+}
+
+
+/*
+RESPONSIVE LAYOUT DESKTOP
+*/
+
+@media screen and (min-width: 1024px) {
+    
+    /*Sezione header*/
+
+    header .col-right .content {
+        display: none;
+    }
+
+    header .content-desktop {
+        display: block;
+    }
+
+    header .row {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    /*Sezione advertisement*/
+
+    .layout-6:first-of-type .col:first-of-type {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .layout-6:first-of-type .col:first-of-type img {
+        width: 100%;
+    }
+
+    /*Sezione use*/
+
+    .layout-2 .row {
+        max-width: 80%;
+        margin: auto;
+        gap: 2rem;
+        padding: 5rem;
+        align-items: flex-end;
+    }
+
+    .layout-2 .col {
+        margin: 0;
+        width: calc(55% - 2rem);
+    }
+
+    .layout-2 .col:last-of-type {
+        width: 45%;
+    }
+
+    .layout-2 .col:first-of-type img {
+        margin-bottom: 5rem;
+    }
+
+    .layout-2 .col:last-of-type img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .layout-2 .col:last-of-type .content {
+        box-sizing: content-box;
+        padding: 2rem;
+    }
+
+    /*Sezione benefits*/
+
+    .layout-6 .col {
+        width: calc((100% - 2rem) / 3);
     }
 
 }
